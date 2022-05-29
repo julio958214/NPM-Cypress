@@ -25,18 +25,14 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('login', () => { 
-
-    cy.url().should('be.equal', Cypress.env('baseUrl'));
-
+Cypress.Commands.add('login', () => {
     cy.fixture('login.json').then((login) => { 
         cy.get('#user-name').type(login.userName);
         cy.get('#password').type(login.password);
     
         cy.get('[type="submit"]').click();
+        cy.get('#react-burger-menu-btn').should('be.visible');
     });
-    
-    cy.get('#react-burger-menu-btn').should('be.visible');
 });
 
 
