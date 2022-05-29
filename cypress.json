@@ -1,0 +1,13 @@
+{
+    "env": {
+        "allure":true,
+        "baseUrl": "https://www.saucedemo.com/"
+    },
+
+    "screenshotOnRunFailure": false,
+    "video": false,
+
+    "viewportWidth": 1000,
+    "viewportHeight": 1020,
+    "chromeWebSecurity": false
+}
