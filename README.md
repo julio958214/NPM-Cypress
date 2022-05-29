@@ -1,22 +1,22 @@
-# Executando testes no projeto Front-testing-vr
+# Executando testes no projeto
 
 ### Instalação 
 
-Ter o node instalado
+Instale o NodeJs pelo link:
 https://nodejs.org/en/download/
 
-**Clonar o projeto**
+**Clone o projeto**
 ``` 
 git clone https://github.com/julio958214/Front-testing-vr.git 
 ```
 
-**Para instale as dependencias do projeto**
+**Instale as dependências do projeto**
 
 ```
 npm install
 ```
 
-**Para executar o projeto rode**
+**Execute o projeto**
 
 ```
 npm run test
