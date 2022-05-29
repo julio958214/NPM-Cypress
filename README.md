@@ -7,15 +7,16 @@ https://nodejs.org/en/download/
 
 **Clonar o projeto**
 ``` 
-git clone https://github.com/julio958214/Front-testing-vr.git
+git clone https://github.com/julio958214/Front-testing-vr.git 
 ```
 
-**Instale o Cypress usando**
+**Para instale as dependencias do projeto**
+
 ```
-npm i cypress --save-dev
+npm install
 ```
 
-**Para executar o projeto**
+**Para executar o projeto rode**
 
 ```
 npm run test
