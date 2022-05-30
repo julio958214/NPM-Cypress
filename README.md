@@ -1,13 +1,12 @@
-# Executando testes no projeto
+# Execução do projeto
 
 ### Instalação 
 
-Instale o NodeJs pelo link:
-https://nodejs.org/en/download/
+Instale o NodeJs pelo link: https://nodejs.org/en/download/
 
 **Clone o projeto**
 ``` 
-git clone https://github.com/julio958214/Front-testing-vr.git 
+git clone https://github.com/julio958214/NPM-Cypress.git
 ```
 
 **Instale as dependências do projeto**
