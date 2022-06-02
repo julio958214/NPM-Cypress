@@ -11,7 +11,7 @@ describe('NPM Project Swag Labs', () => {
 
             cy.get('[type="submit"]').click();
             cy.get('#react-burger-menu-btn').should('be.visible');
-        })
+        });
         
         cy.get('#react-burger-menu-btn').click();
         cy.get('#logout_sidebar_link').click();
