@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
 describe('NPM Project Swag Labs', () => {
-    
     it('Login', () => {
         cy.url().should('be.equal', Cypress.env('baseUrl'));
 
