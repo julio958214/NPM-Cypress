@@ -8,7 +8,7 @@
     "allure:gener": "allure generate allure-results --clean -o allure-report",
     "allure:clean": "(if exist allure-results (rmdir /S /Q allure-results && mkdir allure-results))",
     "allure:history": "move allure-report/history allure-results/history",
-    "test": "npm-run-all allure:gener allure:clean allure:history cy:all"
+    "test": "npm-run-all allure:gener allure:clean allure:history cy:all && allure open"
   },
   "keywords": [],
   "author": "",
