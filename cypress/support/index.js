@@ -1,6 +1,6 @@
 import './commands';
+import './hooks';
 import '@shelex/cypress-allure-plugin';
-
 require('@shelex/cypress-allure-plugin');
 
 const app = window.top;

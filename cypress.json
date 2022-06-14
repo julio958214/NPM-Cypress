@@ -1,4 +1,7 @@
 {
+    "viewportWidth": 1000,
+    "viewportHeight": 1020,
+
     "screenshotOnRunFailure": false,
     "chromeWebSecurity": false
 }
