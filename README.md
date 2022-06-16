@@ -14,11 +14,7 @@ git clone https://github.com/julio958214/NPM-Cypress.git
 ```
 npm install
 ```
-e
 
-```
-yarn install
-```
 **Execute o projeto**
 
 ```
