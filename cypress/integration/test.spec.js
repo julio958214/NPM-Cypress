@@ -9,12 +9,10 @@ describe('NPM Project Swag Labs', () => {
             cy.get('#password').type(login.password);
 
             cy.get('[type="submit"]').click();
-            cy.get('#react-burger-menu-btn').should('be.visible');
+            cy.get('#react-burger-menu-btn')
+                .should('be.exist')
+                .and('be.visible');
         });
-        
-        cy.get('#react-burger-menu-btn').click();
-        cy.get('#logout_sidebar_link').click();
-        cy.get('div[class="login-box"]').should('be.visible');
     });
 
     it('Adding products to cart', () => {
@@ -31,5 +29,7 @@ describe('NPM Project Swag Labs', () => {
                     .should('contain', myProduct)
                     .and('be.visible');
             });
+
+        cy.logOut();    
     });
 });
