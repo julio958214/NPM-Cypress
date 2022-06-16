@@ -20,15 +20,16 @@ describe('NPM Project Swag Labs', () => {
     it('Adding products to cart', () => {
         cy.login();
         
-        const productIWant = 'Sauce Labs Backpack';
-        
-        cy.get('.inventory_item').first().should('contain', productIWant)
-            .get('#add-to-cart-sauce-labs-backpack').click();
-        
-        cy.get('#shopping_cart_container').click();
-        cy.contains('Your Cart');
+        cy.get('.inventory_item_name').first().invoke('text')
+            .then(myProduct => {
 
-        cy.get('.cart_item').children().find('.inventory_item_name')
-            .should('contain', productIWant).and('be.visible');
+                cy.contains('Add to cart').click();
+                cy.get('#shopping_cart_container').click();
+                cy.contains('Your Cart');
+        
+                cy.get('.cart_item')
+                    .should('contain', myProduct)
+                    .and('be.visible');
+            });
     });
 });
