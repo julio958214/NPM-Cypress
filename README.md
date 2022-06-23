@@ -1,20 +1,23 @@
 # Execução do projeto
 
-### Instalação 
 
-Instale o NodeJs pelo link: https://nodejs.org/en/download/
+### Projeto NPM-Cypress
+
+Criei esse projeto adicionando sua execução no Github Actions, com o plugin de report Allure, e publiquei o report utilizando o github pages, nele é possivel acompanhar o resultado da ultima execução com uma evidêcia de validação no final de cada teste.
+
+### Dependências para a instalação e execução do projeto
+
+Baixe e instale o nodejs pelo link: https://nodejs.org/en/download/
 
 **Clone o projeto**
 ``` 
 git clone https://github.com/julio958214/NPM-Cypress.git
 ```
-
 **Instale as dependências do projeto**
 
 ```
 npm install
 ```
-
 **Execute o projeto**
 
 ```
