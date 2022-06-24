@@ -7,11 +7,8 @@ beforeEach(() => {
 });
 
 afterEach(function () {
-    cy.wait(1500);
-    cy.screenshot();
-
-    if(this.currentTest.state === 'failed') {
-        cy.wait(1000);
-        cy.screenshot('error/error');
-    }
+    if(this.currentTest.state === 'failed')
+        return cy.wait(1000).screenshot('error/error');
+    else 
+        return cy.wait(1000).screenshot('output/success');
 });
