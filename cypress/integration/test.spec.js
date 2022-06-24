@@ -29,7 +29,6 @@ describe('NPM Project Swag Labs', () => {
                     .should('contain', myProduct)
                     .and('be.visible');
             });
-
-        cy.logOut();    
+  
     });
 });
