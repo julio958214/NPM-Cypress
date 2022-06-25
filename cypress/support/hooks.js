@@ -7,7 +7,7 @@ beforeEach(() => {
 });
 
 beforeEach(function () { 
-    if(this.currentTest.state = true && fs.readdirSync('/screenshots').length))
+    if(this.currentTest.state = true)
         cy.task('deleteFolder');
 });
 
