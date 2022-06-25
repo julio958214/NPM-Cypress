@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Jun 25 19:15:29 GMT 2022","Sat Jun 25 19:15:31 GMT 2022","1799","","NPM Project Swag Labs","","","","Adding products to cart",""
-"passed","Thu Jun 16 01:14:22 GMT 2022","Thu Jun 16 01:14:23 GMT 2022","1388","","NPM Project Swag Labs","","","","Login",""
-"passed","Sat Jun 25 19:15:23 GMT 2022","Sat Jun 25 19:15:26 GMT 2022","2216","","NPM Project Swag Labs","","","","Valid login",""
