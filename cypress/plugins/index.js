@@ -7,14 +7,6 @@
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 const { rmdir } = require('fs');
 
-/**
- * @type {Cypress.PluginConfig}
- */
-module.exports = (on, config) => {
-    allureWriter(on, config);
-    return config;
-}
-
 module.exports = (on, config) => {
     on('task', {
         deleteFolder(screenshots) {
@@ -33,4 +25,7 @@ module.exports = (on, config) => {
             })
         },
     })
+    
+    allureWriter(on, config);
+    return config;
 }
