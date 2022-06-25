@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe('NPM Project Swag Labs', () => {
-    it('Valid login', () => {
+    it('Valid login ', () => {
         cy.url().should('be.equal', Cypress.env('baseUrl'));
 
         cy.fixture('login.json').then((login) => { 
