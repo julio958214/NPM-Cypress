@@ -6,7 +6,7 @@ beforeEach(() => {
     cy.visit(Cypress.env('baseUrl'));
 });
 
-beforeEach(function () { 
+before(function () { 
     if(this.currentTest.state = true)
         cy.task('deleteFolder');
 });
