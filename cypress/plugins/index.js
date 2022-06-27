@@ -13,7 +13,7 @@ module.exports = (on, config) => {
             console.log('deleting folder %s', screenshots);
 
             return new Promise((resolve, reject) => {
-                rmdir('cypress/screenshots', { maxRetries: 10, recursive: true }, (err) => {
+                rmdir(screenshots, { maxRetries: 10, recursive: true }, (err) => {
                     if (err) {
                         console.error(err);
 
