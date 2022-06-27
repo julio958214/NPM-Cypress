@@ -6,12 +6,12 @@
 
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 const { rmdir } = require('fs');
-const fs = require("fs");
+const fs = require('fs');
 
 module.exports = (on, config) => {
 
     on('task', {
-        pathScreenshot(path) {
+        deleteFolderScreenshot(path) {
             if (fs.existsSync(path)) {
                 
                 return new Promise((resolve, reject) => {
@@ -23,15 +23,15 @@ module.exports = (on, config) => {
                         }
     
                         resolve(null);
-                    })  
-                })
+                    });
+                });
             }
 
-            return null
+            return null;
         }
         
     });
 
     allureWriter(on, config);
     return config;
-}
+};

@@ -10,7 +10,7 @@ beforeEach(() => {
 });
 
 before(function () {
-    cy.task('pathScreenshot', 'cypress/screenshots');        
+    cy.task('deleteFolderScreenshot', 'cypress/screenshots');        
 });
 
 afterEach(function () {
