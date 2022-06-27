@@ -7,13 +7,12 @@ beforeEach(() => {
 });
 
 before(function () { 
-    if(this.currentTest.state = true)
-        cy.task('deleteFolder');
+     cy.task('deleteFolder', 'cypress/screenshots');
 });
 
 afterEach(function () {
     if(this.currentTest.state === 'failed')
-        return cy.wait(1000).screenshot('error/error');
+        return cy.wait(1500).screenshot('error/error');
     else 
         return cy.wait(1500).screenshot('output/success');
 });
