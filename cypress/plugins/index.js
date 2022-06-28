@@ -13,15 +13,15 @@ module.exports = (on, config) => {
     on('task', {
         deleteFolder(path) {
             if (fs.existsSync(path)) {
-                
+
                 return new Promise((resolve, reject) => {
                     rmdir(path, { maxRetries: 10, recursive: true }, (err) => {
                         if (err) {
                             console.error(err);
-    
+
                             return reject(err);
                         }
-    
+
                         resolve(null);
                     });
                 });
@@ -29,7 +29,7 @@ module.exports = (on, config) => {
 
             return null;
         }
-        
+
     });
 
     allureWriter(on, config);
