@@ -11,7 +11,7 @@ const fs = require('fs');
 module.exports = (on, config) => {
 
     on('task', {
-        deleteFolderScreenshot(path) {
+        deleteFolder(path) {
             if (fs.existsSync(path)) {
                 
                 return new Promise((resolve, reject) => {
