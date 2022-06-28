@@ -13,7 +13,7 @@ before(function () {
 
 afterEach(function () {
     if (this.currentTest.state === 'failed')
-        return cy.wait(1500).screenshot('error/error');
+        return cy.wait(1500).screenshot('error/testFailed');
     else
-        return cy.wait(1500).screenshot('output/success');
+        return cy.wait(1500).screenshot('output/testPassed');
 });
