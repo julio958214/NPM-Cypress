@@ -10,7 +10,8 @@ beforeEach(() => {
 });
 
 before(function () {
-    cy.task('deleteFolderScreenshot', 'cypress/screenshots');        
+    cy.task('deleteFolder', 'cypress/screenshots');
+    cy.task('deleteFolder', 'cypress/videos');
 });
 
 afterEach(function () {
