@@ -15,11 +15,11 @@ describe('NPM Project Swag Labs', () => {
         });
     });
 
-    it('Adding products to cart', () => {
-        cy.login();
+       it('Adding products to cart', () => {
+          cy.login();
         
-        cy.get('.inventory_item_name').first().invoke('text')
-            .then(myProduct => {
+          cy.get('.inventory_item_name').first().invoke('text')
+              .then(myProduct => {
 
                 cy.contains('Add to cart').click();
                 cy.get('#shopping_cart_container').click();
