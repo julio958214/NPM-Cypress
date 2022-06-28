@@ -1,13 +1,10 @@
 before(() => {
     cy.log('Start');
+    cy.task('deleteFolder', 'cypress/screenshots');
 });
 
 beforeEach(() => {
     cy.visit(Cypress.env('baseUrl'));
-});
-
-before(function () {
-    cy.task('deleteFolder', 'cypress/screenshots');     
 });
 
 afterEach(function () {
