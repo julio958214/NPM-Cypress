@@ -8,7 +8,7 @@ beforeEach(() => {
 
 before(function () {
     cy.task('deleteFolder', 'cypress/screenshots');
-    cy.task('deleteFolder', 'cypress/videos');
+    cy.task('deleteFolder', 'cypress/videos');       
 });
 
 afterEach(function () {
