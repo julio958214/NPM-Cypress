@@ -1,6 +1,3 @@
-/// <reference types="cypress" />
-
-
 before(() => {
     cy.log('Start');
 });
