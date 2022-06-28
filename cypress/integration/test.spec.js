@@ -6,7 +6,7 @@ describe('NPM Project Swag Labs', () => {
 
         cy.fixture('login.json').then((login) => { 
             cy.get('#user-name').type(login.userName);
-            cy.get('#password').type(login.password);
+            cy.get('#password').type(login.password, { log:true });
 
             cy.get('[type="submit"]').click();
             cy.get('#react-burger-menu-btn')
