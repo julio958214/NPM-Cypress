@@ -9,7 +9,6 @@ const { rmdir } = require('fs');
 const fs = require('fs');
 
 module.exports = (on, config) => {
-
     on('task', {
         deleteFolder(path) {
             if (fs.existsSync(path)) {
