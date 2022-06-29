@@ -12,7 +12,6 @@ module.exports = (on, config) => {
     on('task', {
         deleteFolder(path) {
             if (fs.existsSync(path)) {
-
                 return new Promise((resolve, reject) => {
                     rmdir(path, { maxRetries: 10, recursive: true }, (err) => {
                         if (err) {
