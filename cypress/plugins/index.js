@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-
 /**
  * @type {Cypress.PluginConfig}
  */
@@ -7,10 +5,8 @@
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 const { rmdir } = require('fs');
 const fs = require('fs');
-const dotenvPlugin = require('cypress-dotenv');
 
 module.exports = (on, config) => {
-
     on('task', {
         deleteFolder(path) {
             if (fs.existsSync(path)) {
@@ -25,7 +21,6 @@ module.exports = (on, config) => {
             }
             return null;
         }
-
     });
 
     allureWriter(on, config);
